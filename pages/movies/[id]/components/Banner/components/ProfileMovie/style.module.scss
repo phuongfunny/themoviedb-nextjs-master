@@ -1,0 +1,245 @@
+.banner_profile {
+  width: 73%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &_content {
+      margin-top: 20px;
+    }
+  }
+  .facts {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 10px;
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 3px;
+      }
+    }
+    .certification {
+      padding: 3px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.6);
+      border-radius: 3px;
+    }
+    .dot {
+      height: 5px;
+      width: 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+    }
+    .genres {
+      margin-right: 6px;
+    }
+  }
+  .actions {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    li {
+      margin-right: 20px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .item {
+      a {
+        color: #fff;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        background-color: #032541;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+      }
+      .popover_item {
+        display: none;
+        padding: 5px 7px;
+        bottom: -42px;
+        right: -120px;
+        position: absolute;
+        width: 280px;
+        background-color: #032541;
+        border-radius: 5px;
+        justify-content: center;
+        z-index: 100;
+      }
+    }
+    .custom_list {
+      position: relative;
+      &:hover {
+        .popover_item {
+          display: flex;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: 135px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 8px;
+            border-bottom-color: #032541;
+          }
+        }
+      }
+    }
+    .favorite {
+      position: relative;
+      &:hover {
+        .popover_item {
+          display: flex;
+          width: 330px;
+          right: -146px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: 161px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 8px;
+            border-bottom-color: #032541;
+          }
+        }
+      }
+    }
+    .watch_list {
+      position: relative;
+      &:hover {
+        .popover_item {
+          display: flex;
+          width: 310px;
+          right: -131px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: 145px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 8px;
+            border-bottom-color: #032541;
+          }
+        }
+      }
+    }
+    .star {
+      position: relative;
+      &:hover {
+        .popover_item {
+          display: flex;
+          width: 220px;
+          right: -89px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: 103px;
+            display: block;
+            width: 0;
+            height: 0;
+            border: solid transparent;
+            border-width: 8px;
+            border-bottom-color: #032541;
+          }
+        }
+      }
+    }
+  }
+  .vote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .chart {
+      width: 50px;
+      height: 50px;
+      background-color: #081c22;
+      border-radius: 50%;
+      padding: 2px;
+      position: relative;
+      .MuiCircularProgress-determinate,
+      svg {
+        width: 100% !important;
+        height: 100% !important;
+        color: #1c955a;
+      }
+      .low {
+        svg {
+          color: yellow;
+        }
+      }
+      .tt_vote {
+        position: absolute;
+        top: 12px;
+        left: 13px;
+        color: #fff;
+        font-size: 0.9em;
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+      }
+    }
+    .text {
+      margin-left: 5px;
+      text-align: left;
+      width: 50px;
+      font-weight: 700;
+      line-height: 19px;
+    }
+  }
+  .infor_movie {
+    text-align: left;
+    .tagline {
+      font-size: 1.1em;
+      font-weight: 400;
+      font-style: italic;
+      opacity: 0.7;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 1.3em;
+    }
+    .people {
+      display: flex;
+      list-style: none;
+      line-height: 10px;
+      padding-left: 0;
+      margin-top: 30px;
+      li {
+        width: 33%;
+        flex-basis: 33%;
+        text-align: left;
+        margin-bottom: 14px;
+        margin-right: 0;
+        box-sizing: border-box;
+        padding-right: 20px;
+        .name {
+          font-weight: 700;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

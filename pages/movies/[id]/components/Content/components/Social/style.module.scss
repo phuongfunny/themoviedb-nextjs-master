@@ -1,0 +1,114 @@
+#special_pannel {
+  margin-top: 30px;
+  padding: 5px 15px 40px 15px;
+  border-bottom: 1px solid #bebebe;
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .tab_option {
+    box-shadow: none;
+    margin-left: 20px;
+  }
+  .content_review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &_inner {
+      margin-top: 10px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      .avatar {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .infor {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+    }
+    .teaser {
+      padding: 0px 10px 10px 89px;
+      text-align: left;
+    }
+    .rating {
+      display: flex;
+      height: 23px;
+      margin-bottom: 4px;
+      flex-wrap: nowrap;
+      align-items: center;
+      .rate {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        width: 50px;
+        border-radius: 7px;
+        justify-content: center;
+        color: #fff;
+        margin-left: 15px;
+        height: 88%;
+        svg {
+          width: 10px;
+        }
+        span {
+          font-size: 12px;
+          margin-left: 5px;
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+  .content_discussions {
+    .list_discuss {
+      width: 100%;
+      padding: 5px 10px;
+      tr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 5px 10px;
+        border: 1px solid #bababa;
+        border-radius: 10px;
+      }
+      .post__infor {
+        display: flex;
+        align-items: center;
+        .avatar {
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+      .discuss__infor {
+        width: 60%;
+        .desc {
+          margin-left: 20px;
+        }
+      }
+      .discuss_date {
+        text-align: right;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 0;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .PrivateTabIndicator-root-1 {
+    padding: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.content {
+  .content_wrapper {
+    .row {
+      margin: 0;
+      width: 100%;
+      padding: 30px 40px;
+      .col_content {
+        padding: 0;
+      }
+    }
+    .col-10 {
+      width: 79.333333%;
+    }
+    .col-2 {
+      width: 20.666667%;
+    }
+  }
+}

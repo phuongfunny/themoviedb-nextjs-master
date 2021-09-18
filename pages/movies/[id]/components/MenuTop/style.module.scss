@@ -1,0 +1,98 @@
+.menu_top {
+  margin-top: 70px;
+  .list_item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #fff;
+    .item {
+      margin-left: 20px;
+      padding: 10px 5px;
+      cursor: pointer;
+      position: relative;
+      .sub_menu {
+        display: none;
+        position: absolute;
+        width: 150px;
+        border: 1px solid #ccc;
+        top: 40px;
+        border-radius: 5px;
+        &__list {
+          line-height: 28px;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          position: relative;
+          z-index: 99;
+          background-color: #fff;
+        }
+
+        li:nth-last-child(1) {
+          margin-top: 20px;
+        }
+      }
+      &:hover {
+        .sub_menu {
+          display: block !important;
+        }
+        .item_mini_sub {
+          display: block;
+        }
+      }
+      .sub_item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        z-index: 99;
+        .sub_item_title {
+          padding-left: 10px;
+        }
+        .sub_item_icon {
+          padding-right: 10px;
+        }
+        .sub_item_value {
+          padding-right: 10px;
+        }
+        .item_mini_sub {
+          display: none;
+          position: absolute;
+          z-index: 100;
+          left: 150px;
+          top: 0;
+          width: 180px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #fff;
+          .item_mini_sub__list {
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            justify-content: center;
+            align-items: flex-start;
+            list-style: none;
+            padding-left: 13px;
+            li {
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+              width: 100%;
+            }
+          }
+        }
+        &:hover {
+          .item_mini_sub {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

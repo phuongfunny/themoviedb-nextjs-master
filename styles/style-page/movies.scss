@@ -1,0 +1,131 @@
+#list-movie {
+  margin-top: 64px;
+  .container {
+    padding: 40px 30px;
+    max-width: 90%;
+    .row {
+      display: flex;
+      margin-bottom: 20px;
+      .title,
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+  .content {
+    .list-movies {
+      width: 75%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .page-movie {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .item-movie {
+        width: 18%;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+      .banner-movie {
+        width: 100%;
+        .wrapper {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          .more-movie {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 9px;
+            right: 7px;
+            z-index: 1;
+            background-color: #c2c2c2;
+            border-radius: 50%;
+            display: flex;
+            align-content: flex-start;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+          img {
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+      .title-movie {
+        width: 100%;
+        padding: 10px 10px 0px 10px;
+        position: relative;
+        white-space: normal;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        .vote-progress {
+          width: 35px;
+          height: 35px;
+          background-color: #081c22;
+          border-radius: 50%;
+          padding: 2px;
+          position: absolute;
+          top: -18px;
+          .MuiCircularProgress-determinate,
+          svg {
+            width: 100% !important;
+            height: 100% !important;
+            color: #1c955a;
+          }
+          .low {
+            svg {
+              color: yellow;
+            }
+          }
+        }
+        .tt-vote {
+          position: absolute;
+          top: 9px;
+          right: 6px;
+          color: #fff;
+          font-size: 0.7em;
+        }
+        h2 {
+          font-size: 1em;
+          margin: 0;
+          width: 100%;
+          word-wrap: normal;
+          overflow-wrap: break-word;
+          margin-top: 20px;
+          a {
+            font-weight: 700;
+            color: #000;
+            text-decoration: unset;
+            &:hover {
+              color: #01b4e4;
+            }
+          }
+        }
+      }
+    }
+    .load-more {
+      border: none;
+      min-height: 49px;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 700;
+      outline: none;
+      background-color: #01b4e4;
+    }
+  }
+}

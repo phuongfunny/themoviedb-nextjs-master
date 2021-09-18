@@ -1,0 +1,28 @@
+.popover-more {
+  .popover {
+    .popover-inner {
+      .popover-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
+        a {
+          margin-bottom: 5px;
+          width: 100%;
+          line-height: 25px;
+          text-decoration: unset;
+          color: rgb(122, 122, 122);
+          &:hover {
+            background-color: #032541;
+            color: #fff;
+          }
+        }
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
