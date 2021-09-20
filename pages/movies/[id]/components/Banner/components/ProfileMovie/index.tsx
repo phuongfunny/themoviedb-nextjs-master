@@ -12,6 +12,7 @@ import _ from "lodash";
 import React from "react";
 import { useAppSelector } from "../../../../../../../app/hooks";
 import Style from "./style.module.scss";
+import Link from "next/link";
 
 function ProfileMovie() {
   const [detail, loading] = useAppSelector(
@@ -65,10 +66,12 @@ function ProfileMovie() {
           <span className={Style.dot}></span>
           <span className={Style.genres}>
             {detail.genres.map((item: any, index: number) => (
-              <a href="/" key={index}>
-                {item.name}
-                {index < detail.genres.length - 1 ? "," : ""}
-              </a>
+              <Link href="/">
+                <a key={index}>
+                  {item.name}
+                  {index < detail.genres.length - 1 ? "," : ""}
+                </a>
+              </Link>
             ))}
           </span>
           <span className={Style.dot}></span>
@@ -89,9 +92,11 @@ function ProfileMovie() {
             <div className={Style.text}>User Score</div>
           </li>
           <li className={`${Style.item} ${Style.custom_list}`}>
-            <a href="/">
-              <FontAwesomeIcon icon={faListUl} size="sm" fixedWidth />
-            </a>
+            <Link href="/">
+              <a>
+                <FontAwesomeIcon icon={faListUl} size="sm" fixedWidth />
+              </a>
+            </Link>
             <div
               className={`${Style.popover_item} ${Style.custom_list__popover}`}
             >
@@ -99,9 +104,11 @@ function ProfileMovie() {
             </div>
           </li>
           <li className={`${Style.item} ${Style.favorite}`}>
-            <a href="/">
-              <FontAwesomeIcon icon={faHeart} size="sm" fixedWidth />
-            </a>
+            <Link href="/">
+              <a>
+                <FontAwesomeIcon icon={faHeart} size="sm" fixedWidth />
+              </a>
+            </Link>
             <div
               className={`${Style.popover_item} ${Style.custom_list__popover}`}
             >
@@ -109,9 +116,11 @@ function ProfileMovie() {
             </div>
           </li>
           <li className={`${Style.item} ${Style.watch_list}`}>
-            <a href="/">
-              <FontAwesomeIcon icon={faBookmark} size="sm" fixedWidth />
-            </a>
+            <Link href="/">
+              <a>
+                <FontAwesomeIcon icon={faBookmark} size="sm" fixedWidth />
+              </a>
+            </Link>
             <div
               className={`${Style.popover_item} ${Style.custom_list__popover}`}
             >
@@ -119,9 +128,11 @@ function ProfileMovie() {
             </div>
           </li>
           <li className={`${Style.item} ${Style.star}`}>
-            <a href="/">
-              <FontAwesomeIcon icon={faStar} size="sm" fixedWidth />
-            </a>
+            <Link href="/">
+              <a>
+                <FontAwesomeIcon icon={faStar} size="sm" fixedWidth />
+              </a>
+            </Link>
             <div
               className={`${Style.popover_item} ${Style.custom_list__popover}`}
             >
@@ -129,10 +140,12 @@ function ProfileMovie() {
             </div>
           </li>
           <li>
-            <a href="/">
-              <FontAwesomeIcon icon={faPlay} size="sm" fixedWidth />
-              <span style={{ marginLeft: "5px" }}>Play videos</span>
-            </a>
+            <Link href="/">
+              <a>
+                <FontAwesomeIcon icon={faPlay} size="sm" fixedWidth />
+                <span style={{ marginLeft: "5px" }}>Play videos</span>
+              </a>
+            </Link>
           </li>
         </ul>
         <div className={`${Style.profile_content} ${Style.infor_movie}`}>

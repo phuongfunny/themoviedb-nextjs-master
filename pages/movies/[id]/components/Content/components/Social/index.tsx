@@ -151,9 +151,9 @@ const Social: NextPage<{}> = () => {
                   </div>
                 </div>
               </div>
-              <a href="/" style={{ marginTop: "20px" }}>
-                Read All Reviews
-              </a>
+              <Link href="/">
+                <a style={{ marginTop: "20px" }}>Read All Reviews</a>
+              </Link>
             </div>
           )}
           {openDisc && (

@@ -4,6 +4,7 @@ import React from "react";
 import { useAppSelector } from "../../../../../../../app/hooks";
 import Style from "./style.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 function TopCast() {
   const [list, loading] = useAppSelector(({ people: { list, loading } }) => [
@@ -37,10 +38,12 @@ function TopCast() {
                       ) : (
                         <Link href="/">
                           <a>
-                            <img
+                            <Image
                               src={`https://www.themoviedb.org/t/p/w138_and_h175_face${item.profile_path}`}
                               alt={item.name}
-                            ></img>
+                              width={138}
+                              height={175}
+                            />
                           </a>
                         </Link>
                       )}

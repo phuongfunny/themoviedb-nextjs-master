@@ -44,23 +44,27 @@ const Movie: React.FC<Props> = ({ listItem, index }) => {
                   >
                     <PopoverBody className="popover-more_content">
                       <p>Want to rate or add this item to a list? </p>
-                      <a href="/">
-                        Login{" "}
-                        <FontAwesomeIcon
-                          icon={faAngleRight}
-                          size="lg"
-                          fixedWidth
-                        />
-                      </a>
+                      <Link href="/">
+                        <a>
+                          Login{" "}
+                          <FontAwesomeIcon
+                            icon={faAngleRight}
+                            size="lg"
+                            fixedWidth
+                          />
+                        </a>
+                      </Link>
                       <p>Not a member?</p>
-                      <a href="/">
-                        Sign up and join the community{" "}
-                        <FontAwesomeIcon
-                          icon={faAngleRight}
-                          size="lg"
-                          fixedWidth
-                        />
-                      </a>
+                      <Link href="/">
+                        <a>
+                          Sign up and join the community{" "}
+                          <FontAwesomeIcon
+                            icon={faAngleRight}
+                            size="lg"
+                            fixedWidth
+                          />
+                        </a>
+                      </Link>
                     </PopoverBody>
                   </UncontrolledPopover>
                 </div>

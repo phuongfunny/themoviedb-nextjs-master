@@ -128,7 +128,9 @@ function GreyRight() {
           {keywords?.length > 0 &&
             keywords?.map((word: any, index: number) => (
               <li key={index}>
-                <a href="/">{word.name}</a>
+                <Link href="/">
+                  <a>{word.name}</a>
+                </Link>
               </li>
             ))}
         </ul>
@@ -154,12 +156,16 @@ function GreyRight() {
           <div className={Style.info}>
             <p>
               144 <br />
-              <a href="/">Name</a>
+              <Link href="/">
+                <a>Name</a>
+              </Link>
             </p>
           </div>
         </div>
         <p style={{ marginTop: "20px" }}>
-          <a href="/">View Edit History</a>
+          <Link href="/">
+            <a>View Edit History</a>
+          </Link>
         </p>
       </div>
       <div>

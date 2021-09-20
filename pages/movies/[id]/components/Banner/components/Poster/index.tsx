@@ -6,6 +6,7 @@ import React, { useEffect, useState } from "react";
 import { useAppSelector } from "../../../../../../../app/hooks";
 import movieAPI from "../../../../../../../service/movieAPI";
 import Style from "./style.module.scss";
+import Link from "next/link";
 
 interface Provider {
   provider_name: string;
@@ -93,7 +94,9 @@ function Poster() {
           <div className={Style.text}>
             <h4 style={{ margin: "0" }}>Now Streaming</h4>
             <h3 style={{ margin: "0" }}>
-              <a href="/">Watch Now</a>
+              <Link href="/">
+                <a>Watch Now</a>
+              </Link>
             </h3>
           </div>
         </div>
