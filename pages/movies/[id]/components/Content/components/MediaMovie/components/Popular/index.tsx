@@ -14,39 +14,45 @@ const Popular: React.FC<ToDoProps> = ({ video, poster_1, poster_2 }) => {
     <>
       <div className={Style.popular_detail}>
         <ul>
-          <li>
-            <div
-              className={Style.video_detail}
-              style={{
-                background: `
+          {video && (
+            <li>
+              <div
+                className={Style.video_detail}
+                style={{
+                  background: `
                 url('https://i.ytimg.com/vi/${video.key}/hqdefault.jpg')
                 no-repeat
               `,
-              }}
-            >
-              <ModalVideo key_id={video.key} />
-            </div>
-          </li>
-          <li>
-            <div className={Style.video_detail}>
-              <Image
-                src={`https://www.themoviedb.org/t/p/w533_and_h300_bestv2${poster_1.file_path}`}
-                alt="Backdrops"
-                width={533}
-                height={300}
-              />
-            </div>
-          </li>
-          <li>
-            <div className={Style.video_detail}>
-              <Image
-                src={`https://www.themoviedb.org/t/p/w533_and_h300_bestv2${poster_2.file_path}`}
-                alt="Backdrops"
-                width={533}
-                height={300}
-              />
-            </div>
-          </li>
+                }}
+              >
+                <ModalVideo key_id={video.key} />
+              </div>
+            </li>
+          )}
+          {poster_1 && (
+            <li>
+              <div className={Style.video_detail}>
+                <Image
+                  src={`https://www.themoviedb.org/t/p/w533_and_h300_bestv2${poster_1.file_path}`}
+                  alt="Backdrops"
+                  width={533}
+                  height={300}
+                />
+              </div>
+            </li>
+          )}
+          {poster_2 && (
+            <li>
+              <div className={Style.video_detail}>
+                <Image
+                  src={`https://www.themoviedb.org/t/p/w533_and_h300_bestv2${poster_2.file_path}`}
+                  alt="Backdrops"
+                  width={533}
+                  height={300}
+                />
+              </div>
+            </li>
+          )}
         </ul>
       </div>
     </>
