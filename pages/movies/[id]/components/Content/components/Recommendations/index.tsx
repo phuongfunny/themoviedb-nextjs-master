@@ -12,12 +12,11 @@ const fetchRecommend = (url: string) => movieAPI.getRecommendations(url);
 function Recommendations() {
   const router = useRouter();
   const { id } = router.query;
-  if (id === undefined) return <div>Loading...</div>;
-
   const { data, error } = useSWR<any>(`/${id}/recommendations`, fetchRecommend);
   if (error || !data) {
     return <div></div>;
   }
+  if (id === undefined) return <div>Loading...</div>;
   const results: any = data?.results;
   return (
     <section id={Style.panel_recommen}>

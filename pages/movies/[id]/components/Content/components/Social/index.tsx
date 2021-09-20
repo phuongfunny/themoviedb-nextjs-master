@@ -32,9 +32,8 @@ const Social: NextPage<{}> = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  if (id === undefined) return <div>Loading...</div>;
-
   const { data, error } = useSWR<any>(`/${id}/reviews`, fetcher);
+  if (id === undefined) return <div>Loading...</div>;
 
   if (error) {
     return <ErrorPage statusCode={404} />;

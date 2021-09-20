@@ -1,5 +1,6 @@
 import { ServerStyleSheets } from "@material-ui/styles";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 import React from "react";
 
 class MyDocument extends Document {
@@ -10,6 +11,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <Script src="https://third-party-script.js"></Script>
         <Head>
           <link
             rel="stylesheet"

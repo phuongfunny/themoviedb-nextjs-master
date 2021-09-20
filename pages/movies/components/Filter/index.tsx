@@ -104,7 +104,7 @@ function Filter() {
                       <FormGroup>
                         <Label>
                           <Input type="radio" name="radio1" defaultChecked />{" "}
-                          Movies I Haven't Seen
+                          Movies I Haven&apos;t Seen
                         </Label>
                       </FormGroup>
                       <FormGroup>

@@ -66,8 +66,8 @@ function ProfileMovie() {
           <span className={Style.dot}></span>
           <span className={Style.genres}>
             {detail.genres.map((item: any, index: number) => (
-              <Link href="/">
-                <a key={index}>
+              <Link href="/" key={index}>
+                <a>
                   {item.name}
                   {index < detail.genres.length - 1 ? "," : ""}
                 </a>
