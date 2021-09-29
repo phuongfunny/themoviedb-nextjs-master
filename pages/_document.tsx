@@ -12,15 +12,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Script src="https://third-party-script.js"></Script>
-        <Head>
-          <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          ></link>
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
